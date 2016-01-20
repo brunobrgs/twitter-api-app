@@ -2,3 +2,4 @@
 
 * Usign SQLite as database, we don't need to store any data, just user. Even with this problem on heroku "If you were to use SQLite on Heroku, you would lose your entire database at least once every 24 hours"
 * Using Devise for authentication
+* Twitter bootstrap
