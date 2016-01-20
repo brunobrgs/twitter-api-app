@@ -13,6 +13,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'thin'
+gem 'devise', '3.5.4'
 
 group :development, :test do
   gem 'pry'
