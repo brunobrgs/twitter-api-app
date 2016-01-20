@@ -19,6 +19,14 @@ group :development, :test do
   gem 'pry'
 end
 
+group :test do
+  gem 'rspec-rails', '3.4.0'
+  gem 'capybara', '2.3.0'
+  gem 'capybara-webkit', '1.7.1'
+  gem 'factory_girl_rails', '4.5.0'
+  gem 'database_cleaner', '1.5.1'
+end
+
 group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'

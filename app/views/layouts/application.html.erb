@@ -30,7 +30,9 @@
       <div id="navbar" class="navbar-collapse collapse">
         <%= yield :authentication %>
         <% if user_signed_in? %>
-          <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'btn btn-danger' %>
+          <div class="navbar-form navbar-right">
+            <%= link_to 'Log out', destroy_user_session_path, method: :delete, class: 'btn btn-danger' %>
+          </div>
         <% end %>
       </div>
     </div>
