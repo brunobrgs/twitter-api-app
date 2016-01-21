@@ -11,7 +11,6 @@ feature 'Authentication' do
     click_link 'Sign up'
 
     expect(page).to_not have_link 'Log out'
-    expect(page).to_not have_button 'Sign up'
     expect(page).to_not have_button 'Sign in'
 
     fill_in 'Email', with: 'email1@email.com'
