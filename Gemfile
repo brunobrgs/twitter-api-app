@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.3'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
@@ -17,6 +19,8 @@ gem 'devise', '3.5.4'
 gem 'twitter', '5.15.0'
 gem 'twitter-text', '1.13.0'
 gem 'dotenv-rails'
+
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'pry'
