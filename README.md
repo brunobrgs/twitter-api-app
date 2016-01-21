@@ -2,7 +2,7 @@
 
 # Twitter API app
 
-* Usign SQLite as database, we don't need to store any data, just user. Even with this problem on heroku "If you were to use SQLite on Heroku, you would lose your entire database at least once every 24 hours"
+* Usign PG as database, we don't need to store any data, just user, so we could just use sqlite, but heroku does not support it
 * Using Devise for authentication
 * Using Rspec and Capybara for tests
 * Twitter bootstrap
@@ -22,3 +22,12 @@
 * <tt>RAILS_ENV=test rake db:create</tt>
 * <tt>RAILS_ENV=test rake db:migrate</tt>
 * <tt>rspec</tt>
+
+# Heroku
+
+* Install Heroku
+* <tt>heroku login</tt>
+* <tt>heroku create</tt>
+* <tt>git push heroku master</tt>
+* <tt>heroku run rake db:migrate</tt>
+* <tt>heroku open</tt>
