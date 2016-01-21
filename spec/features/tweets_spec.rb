@@ -15,7 +15,7 @@ feature 'Tweets' do
 
       within 'table' do
         within 'tbody tr:nth-child(1)' do
-          expect(page).to have_content '@Ranglo99 Can you post it in our Tech Forum &amp; link it here? https://t.co/eoaTIXlRIN ^DMC'
+          expect(page).to have_content '@Ranglo99 Can you post it in our Tech Forum & link it here? https://t.co/eoaTIXlRIN ^DMC'
           expect(page).to have_content '20 Jan 23:28'
         end
 

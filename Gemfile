@@ -15,6 +15,7 @@ gem 'turbolinks'
 gem 'thin'
 gem 'devise', '3.5.4'
 gem 'twitter', '5.15.0'
+gem 'twitter-text', '1.13.0'
 gem 'dotenv-rails'
 
 group :development, :test do

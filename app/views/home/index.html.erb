@@ -20,7 +20,7 @@
     <tbody>
       <% @tweets.each do |tweet| %>
         <tr>
-          <td><%= tweet.text %></td>
+          <td><%= tweet_link tweet %></td>
           <td><%= l(tweet.created_at, format: :short) %></td>
         </tr>
       <% end %>
