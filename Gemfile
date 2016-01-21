@@ -14,6 +14,8 @@ gem 'turbolinks'
 
 gem 'thin'
 gem 'devise', '3.5.4'
+gem 'twitter', '5.15.0'
+gem 'dotenv-rails'
 
 group :development, :test do
   gem 'pry'
@@ -25,6 +27,9 @@ group :test do
   gem 'capybara-webkit', '1.7.1'
   gem 'factory_girl_rails', '4.5.0'
   gem 'database_cleaner', '1.5.1'
+  # For test API
+  gem 'vcr', '3.0.1'
+  gem 'webmock', '1.22.6'
 end
 
 group :development do
