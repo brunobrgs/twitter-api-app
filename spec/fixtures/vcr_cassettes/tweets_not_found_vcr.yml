@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?count=25&screen_name=ThisUserDoesNotExist
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.15.0
+      Authorization:
+      - Bearer AAAAAAAAAAAAAAAAAAAAAJnJjwAAAAAAvxrBxp1ysoa6w%2F%2Fbmgp1oS41v24%3DYa5trcMhG3QjxRr8PisqtHso5NjLHjzqQn83v5CokSTFALpBGX
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '93'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 21 Jan 2016 22:11:49 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 21 Jan 2016 22:11:49 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_d
+      Set-Cookie:
+      - guest_id=v1%3A145341430990666242; Domain=.twitter.com; Path=/; Expires=Sat,
+        20-Jan-2018 22:11:49 UTC
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Connection-Hash:
+      - 38a82e937088711ad45aa661fc8ee8e0
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '300'
+      X-Rate-Limit-Remaining:
+      - '287'
+      X-Rate-Limit-Reset:
+      - '1453414419'
+      X-Response-Time:
+      - '148'
+      X-Transaction:
+      - 9ab3655086c75cff
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errors":[{"code":34,"message":"Sorry, that page does not exist."}]}'
+    http_version: 
+  recorded_at: Thu, 21 Jan 2016 22:11:50 GMT
+recorded_with: VCR 3.0.1

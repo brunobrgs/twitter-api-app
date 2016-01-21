@@ -31,4 +31,14 @@ feature 'Tweets' do
       end
     end
   end
+
+  scenario 'Search invalid handle' do
+    VCR.use_cassette("tweets_not_found_vcr") do
+      fill_in 'Handle', with: 'ThisUserDoesNotExist'
+      click_button 'Get'
+
+      expect(page).to have_content 'Handle not found'
+      expect(page).to_not have_css('table')
+    end
+  end
 end

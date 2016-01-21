@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  rescue_from Twitter::Error::NotFound, Twitter::Error::Unauthorized, with: :not_found
+
   def index
   end
 
@@ -19,5 +21,10 @@ class HomeController < ApplicationController
   def need_refresh?
     # When marked to refresh or changes the handle
     params[:refresh] == '1' || Rails.cache.fetch('handle') != params[:handle]
+  end
+
+  def not_found
+    flash[:danger] = I18n.t('handle_not_found')
+    redirect_to action: :index, handle: params[:handle]
   end
 end

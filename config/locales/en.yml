@@ -21,3 +21,4 @@
 
 en:
   hello: "Hello world"
+  handle_not_found: "Handle not found"
