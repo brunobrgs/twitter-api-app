@@ -18,8 +18,8 @@ class TwitterApi
 
   def client
     @client ||= twitter_client.new do |config|
-      config.consumer_key    = ENV['API_KEY']
-      config.consumer_secret = ENV['API_SECRET']
+      config.consumer_key    = ENV['API_KEY'] || '12345'
+      config.consumer_secret = ENV['API_SECRET'] || '12345'
     end
   end
 end

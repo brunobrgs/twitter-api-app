@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/projects/d7a489c4-fb49-45f7-966d-c201fef90869/668478/shields_badge.svg)](https://semaphoreci.com/brunorails/twitter-api-app)
+
 == Twitter API app
 
 * Usign SQLite as database, we don't need to store any data, just user. Even with this problem on heroku "If you were to use SQLite on Heroku, you would lose your entire database at least once every 24 hours"
